@@ -21,4 +21,5 @@ export const register = async (req, res) => {
      
         html: `<b>Welcome to my own page, thank you for giving it a try, in order to use your account you have to confirm it </b><a href="${process.env.PATHHEROKU || "http://localhost:3000"}/confirm/${uid}" >Clicking here<a>`,
 })
+return res.json("se logro")
     }
